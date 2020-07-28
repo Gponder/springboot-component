@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "ponder.autoconfig",
+      "type": "com.gponder.springbootcomponent.autoconfig.MyConfigurationProperties",
+      "sourceType": "com.gponder.springbootcomponent.autoconfig.MyConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ponder.autoconfig.name",
+      "type": "java.lang.String",
+      "sourceType": "com.gponder.springbootcomponent.autoconfig.MyConfigurationProperties",
+      "description": "额外配置"
+    }
+  ],
+  "hints": [
+    {
+      "name": "ponder.autoconfig.external.name",
+      "values": [
+        {
+          "value": "foo"
+        },
+        {
+          "value": "bar"
+        }
+      ]
+    }
+  ]
+}

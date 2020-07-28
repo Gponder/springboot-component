@@ -1,7 +1,9 @@
 package com.gponder.springbootcomponent.autoconfig;
 
+import lombok.Data;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.coyote.UpgradeProtocol;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
@@ -20,10 +22,14 @@ import org.springframework.core.Ordered;
 @AutoConfigureOrder(Ordered.HIGHEST_PRECEDENCE)
 public class MyAutoConfiguration {
 
+    @Autowired
+    private MyConfigurationProperties configurationProperties;
+
     @Bean
     @ConditionalOnClass({Tomcat.class, UpgradeProtocol.class})
     public void addMyConfig(){
-          System.out.println("MyAutoConfiguration");
+        System.out.println("MyAutoConfiguration");
+        System.out.println(configurationProperties);
     }
 
 }
