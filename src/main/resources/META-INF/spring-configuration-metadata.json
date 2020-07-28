@@ -1,0 +1,33 @@
+{
+  "groups": [
+    {
+      "sourceType": "com.gponder.springbootcomponent.autoconfig.MyConfigurationProperties",
+      "name": "ponder.autoconfig",
+      "type": "com.gponder.springbootcomponent.autoconfig.MyConfigurationProperties",
+      "description": "数据库类型"
+    }
+  ],
+  "properties":[
+    {
+      "sourceType": "com.gponder.springbootcomponent.autoconfig.MyConfigurationProperties",
+      "name": "ponder.autoconfig.db-type",
+      "type": "java.lang.String"
+    }
+  ],
+  "hints": [
+    {
+      "values": [
+        {
+          "value": "db2"
+        },
+        {
+          "value": "mysql"
+        },
+        {
+          "value": "oracle"
+        }
+      ],
+      "name": "ponder.autoconfig.db-type"
+    }
+  ]
+}
