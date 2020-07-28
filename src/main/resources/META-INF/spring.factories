@@ -1,1 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.gponder.springbootcomponent.autoconfig.MyAutoConfiguration
+#@EnableAutoConfiguration 加载三方自动化配置时使用
